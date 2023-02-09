@@ -7,20 +7,38 @@
 
   <base href="/" />
 
-  <meta name="color-scheme" content="light dark" />
-  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="msapplication-tap-highlight" content="no" />
-
-  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
-
-  <!-- add to homescreen for ios -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
 </head>
 
 <body>
   <app-root></app-root>
+  <ion-item fill="outline" class="Login">
+    <ion-label position="floating">Nombre de usuario/correo</ion-label>
+    <ion-input placeholder="Enter text"></ion-input>
+  </ion-item>
+
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu Content</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">This is the menu content.</ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      Tap the button in the toolbar to open the menu.
+    </ion-content>
+  </div>
+
 </body>
 
 </html>
