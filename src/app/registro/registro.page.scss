@@ -1,12 +1,40 @@
 .register{
-    width: 50px;
-    margin:10px; 
-    margin-left: 230px;
-    margin-bottom: 30px;
+    width: 300px;
+    margin: 15px;
+    margin-left: 40px;
 
 }
-.registro{
-    position: relative;
-    margin-top: 150px;
-    width: auto;
-}
+
+.menu{
+    --border-width: 4px 0;
+    --border-style: double;
+    --margin-bottom: 50px;
+  
+    --min-height: 80px;
+    --padding-top: 20px;
+  
+    --background: #7dc35a;
+    --color: rgb(243, 243, 245);
+  
+    --border-radius: 0;
+    --border-color: #eeefed;
+    --border-style: solid;
+    --border-width: 1px;
+  
+  }
+  .boton{
+    width: 180px;
+    height:70px;
+    vertical-align: -0px;
+    margin-left: 115px;
+    
+    
+    --background: #7dc35a;
+    --color: rgb(243, 243, 245);
+    
+    --border-radius: 0;
+    --border-color: #eeefed;
+    --border-style: solid;
+    --border-width: 1px;
+    }
+    
