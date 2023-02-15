@@ -25,29 +25,13 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 ion-content {
-    --background: none;
+    --background: black;
+    --color:orangered;
   }
-  body {
+  .body {
     background: url(/src/assets/eva.png) no-repeat center/cover fixed;
   }
 
-  .menu{
-    --border-width: 4px 0;
-    --border-style: double;
-  
-    --min-height: 80px;
-    --padding-top: 20px;
-    --padding-bottom: 20px;
-  
-    --background: #7dc35a;
-    --color: rgb(243, 243, 245);
-  
-    --border-radius: 0;
-    --border-color: #eeefed;
-    --border-style: solid;
-    --border-width: 1px;
-  
-  }
   .boton{
     width: 180px;
     height:70px;
@@ -55,8 +39,8 @@ ion-content {
     margin-left: 115px;
     
     
-    --background: #7dc35a;
-    --color: rgb(243, 243, 245);
+    --background: #0b0b0b;
+    --color:orangered;
     
     --border-radius: 0;
     --border-color: #eeefed;
