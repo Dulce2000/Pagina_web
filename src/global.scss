@@ -30,6 +30,7 @@ ion-content {
   }
   .body {
     background: url(/src/assets/eva.png) no-repeat center/cover fixed;
+
   }
 
   .boton{
@@ -46,6 +47,9 @@ ion-content {
     --border-color: #eeefed;
     --border-style: solid;
     --border-width: 1px;
+
+    margin-left: 92px;
+
     }
     .backbu{
       color: orangered;
