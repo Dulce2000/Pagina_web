@@ -38,7 +38,7 @@ ion-menu::part(backdrop) {
 
 ion-menu::part(container) {
   border-radius: 0 20px 20px 0;
-
+  background-color: rgb(28, 27, 27);
   box-shadow: 4px 0px 16px rgba(255, 132, 0, 0.18);
 }
 .ion-padding{
@@ -52,5 +52,10 @@ ion-menu::part(container) {
   color: orangered;
 }
 .bumenu{
+  color: orangered;
+}
+
+.main{
+  background-color: rgb(65, 61, 61);
   color: orangered;
 }
