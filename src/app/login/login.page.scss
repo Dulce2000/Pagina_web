@@ -5,7 +5,9 @@
 .Login{
     width: 300px;
     margin:10px; 
-    margin-left: 32px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
   
   }
   .Icono{
@@ -19,10 +21,22 @@
   
    
   .etiqueta{
-  width: 500px;
-    margin:10px; 
-    margin-left:-66px;
+  width: 300px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+
   }
+  .msj{
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: medium;
+    color: orange;
+    text-align: center;
+  
+}
 
 
 
