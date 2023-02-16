@@ -1,3 +1,4 @@
+
 #container {
   text-align: center;
 
@@ -43,7 +44,9 @@ ion-menu::part(container) {
 .ion-padding{
   margin-bottom: 50px;
   color:orangered;
-  --background: #0c0d0c;
+  width: auto;
+  --background: url(https://i.pinimg.com/474x/94/23/b6/9423b61549f78bef239492cf6be6ac78.jpg);
+
 }
 .menus{
   color: orangered;
