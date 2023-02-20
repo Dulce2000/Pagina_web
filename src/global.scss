@@ -24,36 +24,24 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
 ion-content {
     --background: black;
     --color:orangered;
   }
-  .body {
-    background: url(/src/assets/eva.png) no-repeat center/cover fixed;
-
-  }
-
   .boton{
     width: 180px;
     height:70px;
-    vertical-align: -0px;
-  
-    
-    
     --background: #0b0b0b;
     --color:orangered;
-    
     --border-radius: 0;
     --border-color: #eeefed;
     --border-style: solid;
     --border-width: 1px;
-
-    
     display: block;
   margin-left: auto;
   margin-right: auto;
-
     }
-    .backbu{
-      color: orangered;
-    }
+  .backbu{
+    color: orangered;
+  }
