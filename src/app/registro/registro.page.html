@@ -8,21 +8,22 @@
 </ion-header>
 
 <ion-content class="pass">
+  <form [formGroup]="onRegisterForm">
   <ion-item fill="outline" class="register">
     <ion-label position="floating">Nombre de usuario</ion-label>
-    <ion-input placeholder="Ejemplo Dulce2000"></ion-input>
+    <ion-input formControlName="name" placeholder="Ejemplo Dulce2000"></ion-input>
     <ion-icon name="people-circle-outline" slot="end"></ion-icon>
   </ion-item>
 
   <ion-item fill="outline" class="register">
     <ion-label position="floating">Correo</ion-label>
-    <ion-input type="Correo" placeholder="Ejemplo@gmail.com"></ion-input>
+    <ion-input formControlName="email" type="Email" placeholder="Ejemplo@gmail.com"></ion-input>
     <ion-icon name="mail-outline" slot="end"></ion-icon>
   </ion-item>
 
   <ion-item fill="outline" class="register">
     <ion-label position="floating">Télefono</ion-label>
-    <ion-input type="Telefono" placeholder="3521579617"></ion-input>
+    <ion-input formControlName="phone" type="Telefono" placeholder="3521579617"></ion-input>
     <ion-icon name="call-outline" slot="end"></ion-icon>
 
   </ion-item>
@@ -42,19 +43,13 @@
 
   <ion-item fill="outline" class="register">
     <ion-label position="floating">Introduce tu Contraseña</ion-label>
-    <ion-input type="password"></ion-input>
-    <ion-icon name="key-outline" slot="end"></ion-icon>
-
-  </ion-item>
-
-  <ion-item fill="outline" class="register">
-    <ion-label position="floating">Vuelve a introducir tu Contraseña</ion-label>
-    <ion-input type="password"></ion-input>
+    <ion-input formControlName="password" type="password"></ion-input>
     <ion-icon name="key-outline" slot="end"></ion-icon>
   </ion-item>
 
   <ion-button class="boton" fill="outline">Registrarse     
     <ion-icon name="glasses-outline" slot="end"></ion-icon>
   </ion-button>
-
+</form>
 </ion-content>
+
