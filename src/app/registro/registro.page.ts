@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
+import { UserService } from '../shared/services/user.service';
 
 @Component({
   selector: 'app-registro',
@@ -9,7 +10,8 @@ import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 export class RegistroPage implements OnInit {
   onRegisterForm!:FormGroup;
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private userService:UserService
   ) { }
 
   ngOnInit() {
@@ -26,10 +28,27 @@ export class RegistroPage implements OnInit {
       'email': [null, Validators.compose([
         Validators.required
       ])],
+      'used': [null, Validators.compose([
+        Validators.required
+      ])]
+      ,
+      'age': [null, Validators.compose([
+        Validators.required
+      ])],
+      'phone': [null, Validators.compose([
+        Validators.required
+      ])],
       'password': [null, Validators.compose([
         Validators.required
       ])]
     });
+  }
+
+  doSave(){
+    console.log(this.onRegisterForm.value)
+    this.userService.registerUser(this.onRegisterForm.value).subscribe((data: any)=>{
+      console.log(data)
+    })
   }
 
 }
