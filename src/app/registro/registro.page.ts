@@ -22,7 +22,7 @@ export class RegistroPage implements OnInit {
       'lastname': [null, Validators.compose([
         Validators.required
       ])],
-      'user': [null, Validators.compose([
+      'usuario': [null, Validators.compose([
         Validators.required
       ])],
       'email': [null, Validators.compose([

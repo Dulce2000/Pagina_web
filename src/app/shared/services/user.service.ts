@@ -12,8 +12,9 @@ url = environment.api;
   }
   registerUser(form: any) {
     let request;
-    return this.http.post(this.url+'/users/create',{
-    file: form,
-  });
+    console.log(form);
+    return this.http.post(this.url+'/users/create',
+    form);
+  
   }
 }
