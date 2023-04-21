@@ -12,9 +12,11 @@ url = environment.api;
   }
   registerUser(form: any) {
     let request;
-    console.log(form);
     return this.http.post(this.url+'/users/create',
     form);
-  
+  }
+  loginUser(form:any){
+    let request
+    return this.http.post(this.url+'/users/login',form)
   }
 }
