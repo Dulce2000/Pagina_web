@@ -1,14 +1,15 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons  slot="start">
-      <ion-back-button class="backbu"></ion-back-button>
+      <ion-back-button class="backbu">Atras</ion-back-button>
     </ion-buttons>
-    <ion-title>Inicia Sesion :D</ion-title>
+    <ion-title class="title">Inicia Sesion :D</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="pass">
-  <form [formGroup]="onLoginForm">
+<ion-content class="pass" [scrollY]="false">
+  <div class="ion-content-scroll-host ion-padding">
+   <form [formGroup]="onLoginForm">
     <ion-avatar class="Icono">
       <ion-icon class="Icono" name="person-circle-outline"></ion-icon>
     </ion-avatar>
@@ -34,4 +35,16 @@
     <ion-label class="msj">¿Aún no te has registrado? </ion-label>
     <ion-button class="etiqueta" fill="clear" routerLink="/registro">Registrate</ion-button>
   </form>
+  </div>
 </ion-content>
+<ion-footer mode="ios" class="footer" collapse="fade">
+  <ion-toolbar>
+    <ion-title class="foot">Optica Casimiro Buenavista</ion-title>
+    <br>
+    <br>
+    <br>
+    <div class="copy">
+    <ion-text class="copy">Copyright (c) 2023 Optica Casimiro Buenavista All Rights Reserved</ion-text>
+  </div>
+  </ion-toolbar>
+</ion-footer>

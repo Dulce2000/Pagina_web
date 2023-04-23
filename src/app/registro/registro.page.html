@@ -7,7 +7,8 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="pass">
+<ion-content class="pass" [scrollY]="true">
+  <div class="ion-content-scroll-host ion-padding">
   <form [formGroup]="onRegisterForm">
     
   <ion-item fill="outline" class="register">
@@ -64,4 +65,16 @@
     <ion-icon name="glasses-outline" slot="end"></ion-icon>
   </ion-button>
 </form>
+</div>
 </ion-content>
+<ion-footer mode="ios" class="footer" collapse="fade">
+  <ion-toolbar>
+    <ion-title class="foot">Optica Casimiro Buenavista</ion-title>
+    <br>
+    <br>
+    <br>
+    <div class="copy">
+    <ion-text class="copy">Copyright (c) 2023 Optica Casimiro Buenavista All Rights Reserved</ion-text>
+  </div>
+  </ion-toolbar>
+</ion-footer>

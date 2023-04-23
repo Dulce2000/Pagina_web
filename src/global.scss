@@ -44,4 +44,35 @@ ion-content {
     }
   .backbu{
     color: orangered;
+    width: auto;
+  }
+  .title{
+  }
+  .ion-content-scroll-host {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+  }
+  .foot{
+    text-align: left;
+    width: fit-content;
+    color: white;
+  }
+  .copy{
+    color: orangered;
+    align-content: center;
+    font: ITC Franklin Gothic;
+    font-size: xx-small;
+    text-align: center;
+    text-size-adjust: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main{
+    color: orangered;
+    margin-left: 10px;
   }

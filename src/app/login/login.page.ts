@@ -27,7 +27,6 @@ export class LoginPage implements OnInit {
   }
   doCheck(){
     this.userService.loginUser(this.onLoginForm.value).subscribe((data: any)=>{
-      
       if (Object.is(data,null)) {
         window.alert("El correo o la contraseña son incorrectos")
       } else {
