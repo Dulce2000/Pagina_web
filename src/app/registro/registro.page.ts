@@ -48,6 +48,11 @@ export class RegistroPage implements OnInit {
     console.log(this.onRegisterForm.value)
     this.userService.registerUser(this.onRegisterForm.value).subscribe((data: any)=>{
       console.log(data)
+      if (Object.is(data,null)) {
+        window.alert("Error al registrar el usuario: El correo ingresado esta ya estaba registrado")
+      } else {
+        window.alert("Usuario registrado con exito")
+      }
     })
   }
 

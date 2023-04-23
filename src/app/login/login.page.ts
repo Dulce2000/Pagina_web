@@ -33,7 +33,6 @@ export class LoginPage implements OnInit {
       } else {
         window.alert("las credenciales son validas")
       }
-      
     })
   }
 

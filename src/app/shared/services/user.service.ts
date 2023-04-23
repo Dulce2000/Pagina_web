@@ -19,4 +19,8 @@ url = environment.api;
     let request
     return this.http.post(this.url+'/users/login',form)
   }
+  recoverPass(form:any){
+    let request
+    return this.http.post(this.url+'/users/forgotpass',form)
+  }
 }
