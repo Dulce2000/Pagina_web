@@ -58,8 +58,11 @@ ion-content {
     overflow-y: auto;
   }
   .foot{
-    text-align: left;
-    width: fit-content;
+    width: 110%;
+    white-space: normal;
+    margin-left: -25px;
+    text-align: center;
+    align-content: center;
     color: white;
   }
   .copy{
@@ -76,3 +79,5 @@ ion-content {
     color: orangered;
     margin-left: 10px;
   }
+
+ 

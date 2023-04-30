@@ -7,9 +7,8 @@ import { HttpClient } from "@angular/common/http";
 })
 export class UserService {
 url = environment.api;
-  constructor(public http:HttpClient) { 
-
-  }
+  constructor(public http:HttpClient) { }
+  
   registerUser(form: any) {
     let request;
     return this.http.post(this.url+'/users/create',
