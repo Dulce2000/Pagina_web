@@ -6,20 +6,22 @@ import { HttpClient } from "@angular/common/http";
   providedIn: 'root'
 })
 export class UserService {
-url = environment.api;
-  constructor(public http:HttpClient) { }
-  
+
+  url = environment.api;
+  constructor(public http: HttpClient) { }
+
   registerUser(form: any) {
     let request;
-    return this.http.post(this.url+'/users/create',
-    form);
+    return this.http.post(this.url + 'users/create',form);
   }
-  loginUser(form:any){
+
+  loginUser(form: any) {
     let request
-    return this.http.post(this.url+'/users/login',form)
+    return this.http.post(this.url + 'users/login', form)
   }
-  recoverPass(form:any){
+
+  recoverPass(form: any) {
     let request
-    return this.http.post(this.url+'/users/forgotpass',form)
+    return this.http.post(this.url + 'users/forgotpass', form)
   }
 }

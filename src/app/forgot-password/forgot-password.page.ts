@@ -20,16 +20,20 @@ export class ForgotPasswordPage implements OnInit {
       'email': [null, Validators.compose([
         Validators.required
       ])]
-      });
+    });
   }
+
   doSend(){
+    
+    console.log(this.onPassForForm.value);
+    
     this.userService.recoverPass(this.onPassForForm.value).subscribe((data: any)=>{
       if (Object.is(data,null)) {
         window.alert("El correo no esta registrado en esta pagina")
       } else {
         window.alert("Contraseñana enviada por email")
       }
-    })
+    });
   }
 
 }

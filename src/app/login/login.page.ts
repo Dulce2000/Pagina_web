@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UserService } from '../shared/services/user.service';
 
@@ -8,12 +9,12 @@ import { UserService } from '../shared/services/user.service';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  onLoginForm!:FormGroup;
+  
+  onLoginForm!: FormGroup;
 
-  constructor(
-    private formBuilder: FormBuilder,
-    private userService:UserService
-    ) { }
+  constructor(private formBuilder: FormBuilder, private userService: UserService, private router: Router) {
+
+  }
 
   ngOnInit() {
     this.onLoginForm = this.formBuilder.group({
@@ -23,14 +24,15 @@ export class LoginPage implements OnInit {
       'password': [null, Validators.compose([
         Validators.required
       ])]
-      });
+    });
   }
-  doCheck(){
-    this.userService.loginUser(this.onLoginForm.value).subscribe((data: any)=>{
-      if (Object.is(data,null)) {
+
+  doCheck() {
+    this.userService.loginUser(this.onLoginForm.value).subscribe((data: any) => {
+      if (Object.is(data, null)) {
         window.alert("El correo o la contraseña son incorrectos")
       } else {
-        window.alert("las credenciales son validas")
+        this.router.navigate(['home']);
       }
     })
   }

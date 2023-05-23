@@ -8,11 +8,12 @@ import { UserService } from '../shared/services/user.service';
   styleUrls: ['./registro.page.scss'],
 })
 export class RegistroPage implements OnInit {
-  onRegisterForm!:FormGroup;
-  constructor(
-    private formBuilder: FormBuilder,
-    private userService:UserService
-  ) { }
+  
+  onRegisterForm!: FormGroup;
+
+  constructor(private formBuilder: FormBuilder, private userService: UserService) {
+
+  }
 
   ngOnInit() {
     this.onRegisterForm = this.formBuilder.group({
@@ -44,16 +45,16 @@ export class RegistroPage implements OnInit {
     });
   }
 
-  doSave(){
+  doSave() {
     console.log(this.onRegisterForm.value)
-    this.userService.registerUser(this.onRegisterForm.value).subscribe((data: any)=>{
+    this.userService.registerUser(this.onRegisterForm.value).subscribe((data: any) => {
       console.log(data)
-      if (Object.is(data,null)) {
+      if (Object.is(data, null)) {
         window.alert("Error al registrar el usuario: El correo ingresado esta ya estaba registrado")
       } else {
         window.alert("Usuario registrado con exito")
       }
-    })
+    });
   }
 
 }
